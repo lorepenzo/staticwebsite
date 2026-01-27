@@ -64,8 +64,11 @@ export default function Index() {
           <button className="bg-buc-button text-white font-bold text-lg md:text-xl lg:text-2xl px-12 py-4 rounded-lg hover:bg-buc-button/90 transition-colors w-fit">
             Contact us
           </button>
+          <div style={{ display: 'flex', flexDirection: 'column', position: 'relative', marginTop: '20px', height: '200px' }} />
         </div>
       </section>
+
+      <div style={{ display: 'flex', flexDirection: 'column', position: 'relative', marginTop: '1px', height: '54px' }} />
 
       {/* Black Students Section */}
       <section className="bg-buc-dark-gray py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20">
