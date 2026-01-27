@@ -134,12 +134,18 @@ export default function Index() {
 
       {/* Email CTA Section */}
       <section className="bg-buc-dark-gray py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="bg-buc-black rounded-lg py-8 md:py-12 lg:py-16 px-6">
+        <div className="max-w-[1440px] mx-auto flex flex-col">
+          <a
+            href="https://groups.google.com/a/blackundergraduatecoalition.com/g/emaillist-black-undergraduate-coalition"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-buc-black rounded-lg flex flex-col w-full md:w-[800px] items-center mx-auto cursor-pointer"
+            style={{ padding: '64px 18px' }}
+          >
             <h2 className="text-white font-bold text-3xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[-0.02em] text-center">
               Join our Email List:
             </h2>
-          </div>
+          </a>
         </div>
       </section>
     </div>
