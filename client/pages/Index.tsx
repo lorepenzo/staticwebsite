@@ -208,7 +208,7 @@ export default function Index() {
               />
               <div className="p-6 lg:p-8 flex-grow flex items-center justify-center">
                 <h3 className="text-black font-bold text-3xl lg:text-[40px] leading-[100%] text-center">
-                  30 Universities
+                  25+ Universities
                 </h3>
               </div>
             </div>
