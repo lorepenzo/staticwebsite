@@ -16,7 +16,14 @@ export default function Index() {
           {/* Social Icons */}
           <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
             {/* LinkedIn */}
-            <a href="#" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
+            <a
+              href="https://www.linkedin.com/company/black-undergraduate-coalition"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="hover:opacity-80 transition-opacity"
+              style={{ cursor: 'pointer', pointerEvents: 'auto' }}
+            >
               <svg className="w-10 h-10 md:w-12 md:h-12 lg:w-[62px] lg:h-[62px]" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M41.3334 20.6666C45.4443 20.6666 49.3868 22.2997 52.2936 25.2065C55.2004 28.1133 56.8334 32.0558 56.8334 36.1666V54.25H46.5001V36.1666C46.5001 34.7963 45.9557 33.4822 44.9868 32.5132C44.0179 31.5443 42.7037 31 41.3334 31C39.9631 31 38.649 31.5443 37.68 32.5132C36.7111 33.4822 36.1667 34.7963 36.1667 36.1666V54.25H25.8334V36.1666C25.8334 32.0558 27.4664 28.1133 30.3733 25.2065C33.2801 22.2997 37.2226 20.6666 41.3334 20.6666Z" stroke="#F3F3F3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M15.5001 23.25H5.16675V54.25H15.5001V23.25Z" stroke="#F3F3F3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
