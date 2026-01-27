@@ -161,12 +161,17 @@ export default function Index() {
             href="https://groups.google.com/a/blackundergraduatecoalition.com/g/emaillist-black-undergraduate-coalition"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-buc-black rounded-lg flex flex-col w-full md:w-[800px] items-center mx-auto cursor-pointer"
+            className="bg-buc-black rounded-lg flex flex-col w-full md:w-[800px] items-center mx-auto"
             style={{ padding: '64px 18px' }}
           >
-            <h2 className="text-white font-bold text-3xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[-0.02em] text-center">
+            <div
+              href="https://groups.google.com/a/blackundergraduatecoalition.com/g/emaillist-black-undergraduate-coalition"
+              target="_blank"
+              className="text-white font-bold text-3xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[-0.02em] text-center"
+              style={{ cursor: 'pointer', pointerEvents: 'auto', display: 'flex' }}
+            >
               Join our Email List:
-            </h2>
+            </div>
           </a>
         </div>
       </section>
