@@ -79,9 +79,14 @@ export default function Index() {
             Building The Next Generation of Black Leaders in Canada
           </h1>
 
-          <button className="bg-buc-button text-white font-bold text-lg md:text-xl lg:text-2xl px-12 py-4 rounded-lg hover:bg-buc-button/90 transition-colors w-fit" style={{ marginLeft: 'auto' }}>
+          <a
+            href="mailto:info@blackundergraduatecoalition.com"
+            target="_blank"
+            className="bg-buc-button text-white font-bold text-lg md:text-xl lg:text-2xl px-12 py-4 rounded-lg hover:bg-buc-button/90 transition-colors w-fit inline-block"
+            style={{ marginLeft: 'auto', cursor: 'pointer', pointerEvents: 'auto' }}
+          >
             Contact us
-          </button>
+          </a>
         </div>
       </section>
 
