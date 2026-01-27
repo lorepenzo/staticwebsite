@@ -57,14 +57,14 @@ export default function Index() {
 
         {/* Hero Content */}
         <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 h-full flex flex-col justify-end pb-12 md:pb-16 lg:pb-24">
-          <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[-0.02em] max-w-5xl mb-6 md:mb-8">
+          <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px', paddingBottom: '30px' }} />
+          <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[-0.02em] mb-6 md:mb-8" style={{ maxWidth: '1097px' }}>
             Building The Next Generation of Black Leaders in Canada
           </h1>
-          
-          <button className="bg-buc-button text-white font-bold text-lg md:text-xl lg:text-2xl px-12 py-4 rounded-lg hover:bg-buc-button/90 transition-colors w-fit">
+
+          <button className="bg-buc-button text-white font-bold text-lg md:text-xl lg:text-2xl px-12 py-4 rounded-lg hover:bg-buc-button/90 transition-colors w-fit" style={{ marginLeft: 'auto' }}>
             Contact us
           </button>
-          <div style={{ display: 'flex', flexDirection: 'column', position: 'relative', marginTop: '20px', height: '200px' }} />
         </div>
       </section>
 
