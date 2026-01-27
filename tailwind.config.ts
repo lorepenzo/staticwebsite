@@ -14,14 +14,20 @@ export default {
     },
     extend: {
       fontFamily: {
-        'century-gothic': ['"Century Gothic"', '-apple-system', 'Roboto', 'Helvetica', 'sans-serif'],
+        "century-gothic": [
+          '"Century Gothic"',
+          "-apple-system",
+          "Roboto",
+          "Helvetica",
+          "sans-serif",
+        ],
       },
       colors: {
-        'buc-black': '#000000',
-        'buc-dark-gray': '#433F3F',
-        'buc-button': '#342F31',
-        'buc-card-bg': '#FAFAF5',
-        'buc-card-border': '#E6E6E6',
+        "buc-black": "#000000",
+        "buc-dark-gray": "#433F3F",
+        "buc-button": "#342F31",
+        "buc-card-bg": "#FAFAF5",
+        "buc-card-border": "#E6E6E6",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
