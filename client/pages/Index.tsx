@@ -38,7 +38,6 @@ export default function Index() {
               rel="noopener noreferrer"
               aria-label="Instagram"
               className="hover:opacity-80 transition-opacity"
-              style={{ cursor: 'pointer', pointerEvents: 'auto' }}
             >
               <svg className="w-10 h-10 md:w-12 md:h-12 lg:w-[63px] lg:h-[63px]" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M44.625 5.25H18.375C11.1263 5.25 5.25 11.1263 5.25 18.375V44.625C5.25 51.8737 11.1263 57.75 18.375 57.75H44.625C51.8737 57.75 57.75 51.8737 57.75 44.625V18.375C57.75 11.1263 51.8737 5.25 44.625 5.25Z" fill="white"/>
