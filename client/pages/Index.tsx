@@ -166,7 +166,7 @@ export default function Index() {
       <section className="bg-buc-dark-gray py-12 md:py-16 lg:py-20 px-6 md:px-12 lg:px-20">
         <div className="max-w-[1440px] mx-auto">
           <h2 className="text-white font-bold text-3xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[-0.02em] text-center mb-6 md:mb-8 lg:mb-10">
-            Black Students Pushing National Dialogue
+            Black Students Advancing National Dialogue
           </h2>
 
           <p className="text-white text-base md:text-xl lg:text-2xl leading-[120%] tracking-[-0.02em] text-center max-w-6xl mx-auto">
