@@ -194,7 +194,7 @@ export default function Index() {
               />
               <div className="p-6 lg:p-8 flex-grow flex items-center justify-center">
                 <h3 className="text-black font-bold text-3xl lg:text-[40px] leading-[100%] text-center">
-                  350 Students Nation-wide
+                  10 000+ Students Nation-wide
                 </h3>
               </div>
             </div>
