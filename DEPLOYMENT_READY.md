@@ -4,13 +4,14 @@
 **Last Updated**: January 28, 2025  
 **Build Output**: `dist/spa/`  
 **Build Time**: ~26 seconds  
-**Bundle Size**: ~580 KB (uncompressed) | ~167 KB (gzip)  
+**Bundle Size**: ~580 KB (uncompressed) | ~167 KB (gzip)
 
 ---
 
 ## 📦 What's Been Configured
 
 ### 1. **Build System Optimization**
+
 - ✅ Vite configured for static SPA deployment
 - ✅ Terser minification enabled
 - ✅ Code splitting (vendor chunk isolation)
@@ -19,6 +20,7 @@
 - ✅ Express server excluded from production build
 
 ### 2. **Static Site Generation**
+
 - ✅ Output directory: `dist/spa/`
 - ✅ Build command: `pnpm build`
 - ✅ All assets auto-versioned with hash
@@ -26,12 +28,14 @@
 - ✅ Fully self-contained static site
 
 ### 3. **SPA Routing Configuration**
+
 - ✅ `public/_redirects` file created for Cloudflare Pages
 - ✅ All non-existent paths redirect to `index.html` (status 200)
 - ✅ React Router handles client-side navigation
 - ✅ No 404 errors on page refresh
 
 ### 4. **Build Output Structure**
+
 ```
 dist/spa/
 ├── index.html                 # Main HTML entry (483 bytes)
@@ -46,6 +50,7 @@ dist/spa/
 ```
 
 ### 5. **Dependencies Updated**
+
 - Added: `terser@5.46.0` (minification)
 - All dependencies compatible with Node.js v20+
 - `pnpm@10.14.0` for faster installs
@@ -70,6 +75,7 @@ dist/spa/
 4. Automatic deployments on every push to `main`
 
 **Configuration in Cloudflare Dashboard:**
+
 ```
 Framework: None (custom)
 Build command: pnpm build
@@ -123,6 +129,7 @@ cat dist/spa/_redirects    # Verify routing config
 ## 📋 Pre-Deployment Checklist
 
 - [ ] **Local Build Success**
+
   ```bash
   pnpm install
   pnpm typecheck
@@ -130,12 +137,14 @@ cat dist/spa/_redirects    # Verify routing config
   ```
 
 - [ ] **Build Output Verified**
+
   ```bash
   ls -la dist/spa/index.html
   cat dist/spa/_redirects
   ```
 
 - [ ] **Git Status**
+
   ```bash
   git status
   git add .
@@ -162,15 +171,15 @@ cat dist/spa/_redirects    # Verify routing config
 
 ## 📊 Build Metrics
 
-| Metric | Value |
-|--------|-------|
-| Build Time | ~26 seconds |
-| HTML Size | 483 bytes |
-| CSS Size | 60.39 KB (11.01 KB gzip) |
-| JS (App) | 186.89 KB (54.00 KB gzip) |
+| Metric      | Value                      |
+| ----------- | -------------------------- |
+| Build Time  | ~26 seconds                |
+| HTML Size   | 483 bytes                  |
+| CSS Size    | 60.39 KB (11.01 KB gzip)   |
+| JS (App)    | 186.89 KB (54.00 KB gzip)  |
 | JS (Vendor) | 332.72 KB (102.27 KB gzip) |
-| Total | ~580 KB (167 KB gzip) |
-| Modules | 1,755 |
+| Total       | ~580 KB (167 KB gzip)      |
+| Modules     | 1,755                      |
 
 ---
 
@@ -179,12 +188,14 @@ cat dist/spa/_redirects    # Verify routing config
 If you need environment variables (API keys, etc):
 
 **Development (.env file):**
+
 ```
 VITE_API_URL=https://api.example.com
 VITE_APP_NAME=BUC Website
 ```
 
 **Cloudflare Dashboard:**
+
 1. Project Settings → Environment Variables
 2. Add for Production & Preview environments
 3. Prefix with `VITE_` to expose to client
@@ -198,7 +209,7 @@ VITE_APP_NAME=BUC Website
 ✅ **Server code excluded**: `server/**` not in `dist/spa/`  
 ✅ **Git history not deployed**: `.git/` excluded  
 ✅ **HTTPS by default**: Cloudflare Pages auto-provisions SSL  
-✅ **SPA routing safe**: All routes handle client-side  
+✅ **SPA routing safe**: All routes handle client-side
 
 ---
 
@@ -214,19 +225,20 @@ VITE_APP_NAME=BUC Website
 
 ## 🔗 Project Links
 
-| Item | Link |
-|------|------|
-| Build Config | `vite.config.ts` |
-| Routing Config | `public/_redirects` |
-| Package Config | `package.json` |
-| Full Guide | `CLOUDFLARE_PAGES_DEPLOYMENT.md` |
-| Quick Start | `CLOUDFLARE_PAGES_QUICK_START.md` |
+| Item           | Link                              |
+| -------------- | --------------------------------- |
+| Build Config   | `vite.config.ts`                  |
+| Routing Config | `public/_redirects`               |
+| Package Config | `package.json`                    |
+| Full Guide     | `CLOUDFLARE_PAGES_DEPLOYMENT.md`  |
+| Quick Start    | `CLOUDFLARE_PAGES_QUICK_START.md` |
 
 ---
 
 ## ✨ Next Steps
 
 1. **Push to GitHub** (if not already)
+
    ```bash
    git push origin main
    ```
@@ -257,15 +269,18 @@ VITE_APP_NAME=BUC Website
 ## 🆘 Troubleshooting
 
 ### Build Fails in Cloudflare
+
 **Check**: Node version is v20 or higher
 **Check**: `pnpm build` succeeds locally first
 **Check**: All dependencies in `package.json`
 
 ### SPA Routing Returns 404
+
 **Fix**: Verify `dist/spa/_redirects` exists
 **Verify**: Content is `/*  /index.html  200`
 
 ### Large Bundle Size
+
 **Check**: No unnecessary dependencies
 **Review**: Code splitting in `vite.config.ts`
 **Use**: Lazy loading for routes
@@ -298,6 +313,7 @@ Your Black Undergraduate Coalition website is **fully optimized for Cloudflare P
 ---
 
 **Questions?** Refer to:
+
 - Full guide: `CLOUDFLARE_PAGES_DEPLOYMENT.md`
 - Cloudflare docs: https://developers.cloudflare.com/pages/
 - Vite docs: https://vitejs.dev/guide/build.html

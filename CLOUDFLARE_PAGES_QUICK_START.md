@@ -25,6 +25,7 @@ pnpm build
 ## 3️⃣ Deploy to Cloudflare Pages
 
 ### GitHub Integration (Automatic)
+
 ```
 1. Push code to GitHub
 2. Cloudflare Pages auto-deploys via webhook
@@ -34,6 +35,7 @@ pnpm build
 ```
 
 ### Manual Upload (CLI)
+
 ```bash
 # Install Wrangler CLI
 npm install -g wrangler
@@ -65,6 +67,7 @@ npx serve dist/spa
 ## ⚙️ Cloudflare Dashboard Configuration
 
 **Build Settings:**
+
 - Framework: None (custom)
 - Build command: `pnpm build`
 - Build output directory: `dist/spa`
@@ -96,11 +99,11 @@ npx serve dist/spa
 
 ## 📞 Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Build fails | Check Node version (v20+), run `pnpm install` |
+| Issue               | Solution                                          |
+| ------------------- | ------------------------------------------------- |
+| Build fails         | Check Node version (v20+), run `pnpm install`     |
 | 404 on page refresh | Verify `public/_redirects` exists and is deployed |
-| Slow builds | Use pnpm cache, check dependencies |
-| Large bundle | Review dependencies, enable code splitting |
+| Slow builds         | Use pnpm cache, check dependencies                |
+| Large bundle        | Review dependencies, enable code splitting        |
 
 See `CLOUDFLARE_PAGES_DEPLOYMENT.md` for detailed guide.

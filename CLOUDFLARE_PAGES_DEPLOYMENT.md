@@ -12,27 +12,33 @@ This project has been optimized for static deployment on Cloudflare Pages. Follo
 ## Local Development
 
 ### Installation
+
 ```bash
 pnpm install
 ```
 
 ### Run Development Server
+
 ```bash
 pnpm dev
 ```
+
 The app will start at `http://localhost:8080`
 
 ### Type Checking
+
 ```bash
 pnpm typecheck
 ```
 
 ### Run Tests
+
 ```bash
 pnpm test
 ```
 
 ### Format Code
+
 ```bash
 pnpm format.fix
 ```
@@ -40,16 +46,19 @@ pnpm format.fix
 ## Building for Cloudflare Pages
 
 ### Build Command
+
 ```bash
 pnpm build
 ```
 
 This command:
+
 1. Builds the React client to `dist/spa/`
 2. Optimizes for Cloudflare Pages with minification and code splitting
 3. Generates production-ready static assets
 
 ### Build Output Structure
+
 ```
 dist/spa/
 ├── index.html          # Entry point
@@ -85,6 +94,7 @@ dist/spa/
 ### Option 2: Direct Upload (Manual)
 
 1. **Build Locally**
+
    ```bash
    pnpm install
    pnpm build
@@ -94,6 +104,7 @@ dist/spa/
    - Go to Cloudflare Dashboard > Pages
    - Select your project
    - Click "Upload assets" (or use Wrangler CLI)
+
    ```bash
    npm install -g wrangler
    wrangler pages deploy dist/spa
@@ -113,6 +124,7 @@ The `public/_redirects` file is automatically copied to `dist/spa/` during build
 ```
 
 This rule:
+
 - Routes all non-existent paths to `index.html` (status 200)
 - Allows React Router to handle client-side routing
 - Works seamlessly with Cloudflare Pages
@@ -122,6 +134,7 @@ This rule:
 For sensitive data or environment-specific config:
 
 1. **Add to `.env` file** (local development only)
+
    ```
    VITE_API_URL=https://api.example.com
    ```
@@ -139,22 +152,26 @@ For sensitive data or environment-specific config:
 ## Optimizations Applied
 
 ✅ **Static Site Configuration**
+
 - No Node.js server dependencies in production
 - Client-side only React + React Router
 - Express server only used in development
 
 ✅ **Build Performance**
+
 - Code minification with Terser
 - Code splitting (vendor chunk isolation)
 - Asset versioning for cache busting
 - Target: ES2020 (modern browser support)
 
 ✅ **SPA Routing**
+
 - `_redirects` configuration for Cloudflare Pages
 - Client-side routing with React Router
 - 404 page handled gracefully
 
 ✅ **Security**
+
 - No `server/**` files deployed
 - `.env` files excluded from build
 - Git history ignored (`.git/` not deployed)
@@ -175,23 +192,30 @@ Before deploying to production:
 ## Troubleshooting
 
 ### Build Fails with PostCSS Errors
+
 ```
 Error: [postcss] The `border-border` class does not exist
 ```
+
 **Solution**: Already fixed in `client/global.css`. Uses CSS variables directly instead of Tailwind classes.
 
 ### Routing Issues (404 on Refresh)
+
 **Cause**: `_redirects` file not deployed
 **Solution**: Ensure `public/_redirects` exists. Cloudflare Pages automatically copies files from `public/` to output.
 
 ### Slow Builds
-**Solution**: 
+
+**Solution**:
+
 - Use pnpm (faster than npm)
 - Enable GitHub Actions caching in Cloudflare
 - Check Node.js version (v22 is faster)
 
 ### Large Build Output
+
 **Solution**:
+
 - Vite already enables code splitting
 - Check for unused dependencies in `package.json`
 - Consider lazy-loading routes with React Router
@@ -250,6 +274,7 @@ npx serve dist/spa
 ## Support
 
 For issues or questions:
+
 1. Check [Cloudflare Pages Status](https://www.cloudflarestatus.com/)
 2. Review Cloudflare Pages [Discord Community](https://discord.gg/cloudflaredev)
 3. Check project documentation and logs in Cloudflare Dashboard
