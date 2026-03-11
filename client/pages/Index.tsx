@@ -13,7 +13,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Modern Sticky Navigation Bar */}
-      <nav className="sticky top-0 z-50 bg-white shadow-sm">
+      <nav className="sticky top-0 z-50 bg-black shadow-sm">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -31,10 +31,10 @@ export default function Index() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-800 font-medium hover:text-buc-black transition-all duration-200 relative group text-sm lg:text-base"
+                  className="text-white font-medium hover:text-gray-300 transition-all duration-200 relative group text-sm lg:text-base"
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-buc-black group-hover:w-full transition-all duration-300" />
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
             </div>
@@ -46,7 +46,7 @@ export default function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-gray-600 hover:text-buc-black transition-colors duration-200"
+                className="text-white hover:text-gray-300 transition-colors duration-200"
               >
                 <svg
                   className="w-5 h-5 lg:w-6 lg:h-6"
@@ -83,7 +83,7 @@ export default function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-gray-600 hover:text-buc-black transition-colors duration-200"
+                className="text-white hover:text-gray-300 transition-colors duration-200"
               >
                 <svg
                   className="w-5 h-5 lg:w-6 lg:h-6"
@@ -112,7 +112,7 @@ export default function Index() {
               <a
                 href="mailto:info@blackundergraduatecoalition.com"
                 aria-label="Email"
-                className="text-gray-600 hover:text-buc-black transition-colors duration-200"
+                className="text-white hover:text-gray-300 transition-colors duration-200"
               >
                 <svg
                   className="w-5 h-5 lg:w-6 lg:h-6"
@@ -130,12 +130,12 @@ export default function Index() {
 
             {/* Mobile Hamburger Menu Button */}
             <button
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              className="md:hidden p-2 rounded-lg hover:bg-gray-900 transition-colors duration-200"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
               <svg
-                className="w-6 h-6 text-gray-800"
+                className="w-6 h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -161,12 +161,12 @@ export default function Index() {
 
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
-            <div className="md:hidden pb-4 space-y-3 border-t border-gray-200 pt-4 animate-in fade-in slide-in-from-top-2">
+            <div className="md:hidden pb-4 space-y-3 border-t border-gray-700 pt-4 animate-in fade-in slide-in-from-top-2">
               {navigationItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+                  className="block px-4 py-2 text-white hover:bg-gray-900 rounded-lg transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -178,7 +178,7 @@ export default function Index() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="text-gray-600 hover:text-buc-black transition-colors"
+                  className="text-white hover:text-gray-300 transition-colors"
                 >
                   <svg
                     className="w-5 h-5"
@@ -215,7 +215,7 @@ export default function Index() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="text-gray-600 hover:text-buc-black transition-colors"
+                  className="text-white hover:text-gray-300 transition-colors"
                 >
                   <svg
                     className="w-5 h-5"
@@ -244,7 +244,7 @@ export default function Index() {
                 <a
                   href="mailto:info@blackundergraduatecoalition.com"
                   aria-label="Email"
-                  className="text-gray-600 hover:text-buc-black transition-colors"
+                  className="text-white hover:text-gray-300 transition-colors"
                 >
                   <svg
                     className="w-5 h-5"
