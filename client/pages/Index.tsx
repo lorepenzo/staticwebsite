@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Index() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+ 
 
   // const navigationItems = [
   //  { label: "Home", href: "#home" },
