@@ -3,12 +3,12 @@ import { useState } from "react";
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navigationItems = [
-    { label: "Home", href: "#home" },
-    { label: "About Us", href: "#about" },
-    { label: "Convergence", href: "#convergence" },
-    { label: "Resources", href: "#resources" },
-  ];
+  // const navigationItems = [
+  //  { label: "Home", href: "#home" },
+    //{ label: "About Us", href: "#about" },
+ //   { label: "Convergence", href: "#convergence" },
+   // { label: "Resources", href: "#resources" },
+  ];//
 
   return (
     <div className="min-h-screen bg-white">
