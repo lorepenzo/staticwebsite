@@ -14,14 +14,14 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       {/* Modern Sticky Navigation Bar */}
       <nav className="sticky top-0 z-50 bg-black shadow-sm">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-22">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/a4affbe34d2c1e7bd754780b389d2ef0fe9d92eb?width=644"
                 alt="Black Undergraduate Coalition"
-                className="h-16 md:h-16 w-auto"
+                className="h-16 md:h-14 w-auto"
               />
             </div>
 
