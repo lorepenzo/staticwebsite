@@ -21,7 +21,7 @@ export default function Index() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/a4affbe34d2c1e7bd754780b389d2ef0fe9d92eb?width=644"
                 alt="Black Undergraduate Coalition"
-                className="h-16 md:h-14 w-auto"
+                className="h-16 md:h-14 w-10"
               />
             </div>
 
