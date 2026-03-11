@@ -14,14 +14,14 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       {/* Modern Sticky Navigation Bar */}
       <nav className="sticky top-0 z-50 bg-black shadow-sm">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-22">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/a4affbe34d2c1e7bd754780b389d2ef0fe9d92eb?width=644"
                 alt="Black Undergraduate Coalition"
-                className="h-14 md:h-14 w-auto"
+                className="h-16 md:h-16 w-auto"
               />
             </div>
 
@@ -49,7 +49,7 @@ export default function Index() {
                 className="text-white hover:text-gray-300 transition-colors duration-200"
               >
                 <svg
-                  className="w-5 h-5 lg:w-6 lg:h-6"
+                  className="w-7 h-7 lg:w-8 lg:h-8"
                   viewBox="0 0 62 62"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ export default function Index() {
                 className="text-white hover:text-gray-300 transition-colors duration-200"
               >
                 <svg
-                  className="w-5 h-5 lg:w-6 lg:h-6"
+                  className="w-7 h-7 lg:w-8 lg:h-8"
                   viewBox="0 0 59 59"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
