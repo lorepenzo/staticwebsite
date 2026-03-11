@@ -8,7 +8,7 @@ export default function Index() {
     //{ label: "About Us", href: "#about" },
  //   { label: "Convergence", href: "#convergence" },
    // { label: "Resources", href: "#resources" },
-  ];//
+  // ];
 
   return (
     <div className="min-h-screen bg-white">
